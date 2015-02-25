@@ -1,0 +1,114 @@
+/**
+  This style sheet is for the Responsive Subheader plugin admin page to mostly hide
+  elements that are not pertinent to the use of this Custom Post Type...and other things.
+  elements inserted by the plugin.
+  Created on : Feb 20, 2015, 12:00:00 PM
+  Author     : Dennis M. Barber
+  Version    : 1.0.0
+*/
+
+body.post-type-responsive_subheader #posts-filter .row-actions .inline,
+body.post-type-responsive_subheader #posts-filter .row-actions .view {
+  display: none !important;
+}
+body.post-type-responsive_subheader #edit-slug-box,
+body.post-type-responsive_subheader #preview-action {
+  display: none !important;
+}
+
+.responsive-subheader-settings-form input[type="radio"],
+.responsive-subheader-settings-form input[type="radio"]+label img {
+  vertical-align: middle
+}
+
+.rs-overlay-settings-table {
+  border-spacing: 0px 15px;
+}
+.rs-overlay-settings-table td {
+  vertical-align: middle;
+}
+.rs-overlay-display-cell {
+  width: 700px;
+  height: 210px;
+  padding: 0;
+  margin: 0;
+}
+.rs-color-picker-label {
+  display: inline-block;
+  height: 32px;
+  line-height: 1;
+  margin:0 6px 6px 0;
+  padding: 1px;
+  font-size: 110%;
+}
+.wp-color-result {
+  margin: 0;
+}
+
+.rs-overlay-display-cell .subheader-container {
+  max-width: 700px;
+  height: 200px;
+  margin: 0 0 10px 0;
+  position: relative;
+  padding: 0;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+  box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+  z-index: 9;
+  background-color: #1e73be;
+}
+.rs-overlay-display-cell .sub-header-banner-container {
+  max-width: 400px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.rs-overlay-display-cell .sub-header-banner-container img {
+  width: auto;
+  height: 200px;
+  vertical-align: middle;
+  margin: 0;
+}
+.rs-overlay-display-cell .rs_overlay_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: none;
+  z-index: 10;
+  width: auto;
+}
+.overlay-visible {
+  display: inherit !important;
+}
+.rs_page_title_demo {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-align: right;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.7);
+  font-size: 24px;
+  line-height: 24px;
+  z-index: 12;
+}
+#responsive-subheader-attachment-images img {
+  margin: 5px;
+}
+
+@media only screen and (max-width: 992px)
+{
+  .overlay-visible {
+    display: none !important;
+  }
+  .rs-overlay-display-cell .sub-header-banner-container {
+    width: 100%;
+  }
+}

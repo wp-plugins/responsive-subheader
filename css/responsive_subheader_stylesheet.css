@@ -1,0 +1,181 @@
+/**
+  This style sheet is for the Responsive Subheader plugin to add styles to user frontend
+  elements inserted by the plugin.
+  Created on : Feb 20, 2015, 12:00:00 PM
+  Author     : Dennis M. Barber
+  Version    : 1.0.4
+*/
+#sub-header {
+
+}
+#sub-header-wrapper {
+
+}
+.sub-header-front-page-wrapper {
+
+}
+.sub-header-page-wrapper {
+  margin-top: 20px;
+}
+.sub-header-container {
+  width: 100%;
+  max-width: 1020px; /* Subtract 300 from your total width and set that to the max-width value for #sub-header-banner-container below */
+  margin: 20px auto 30px;
+  padding: 0;
+  clear: both;
+  overflow: auto;
+}
+.headpost-text-column {
+  width: 25%;
+  margin: 0;
+  padding: 0 12px;
+  float: left;
+  text-align: left;
+}
+.headpost-text-column .full {
+  width: 100%;
+}
+.headpost-thumb-column {
+  width: 75%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+  box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+}
+.headpost-thumb-column img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1.homeContent {
+  margin: 0 0 10px;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: "PT Sans Narrow",Helvetica,arial,sans-serif !important;
+  font-weight: 400 !important;
+  font-style: italic;
+  color: #333;
+  text-shadow: 0 1px 0 #fff;
+}
+.headpost-text-column p {
+  margin: 0 0 10px;
+  text-align: justify;
+}
+
+.banner-container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+  box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
+  z-index: 2;
+}
+#sub-header-banner-container {
+  width: 100%;
+  max-width: 720px;
+  height: 200px;
+  overflow: hidden;
+}
+#sub-header-banner-container img {
+  max-width: 100%;
+  height: 200px;
+  vertical-align: middle;
+  margin: 0;
+}
+#banner-overlay-container {
+  float: right;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  width: auto;
+}
+.visible-overlay {
+  display: inherit !important;
+}
+.visible-title {
+  display: inherit !important;
+}
+#sub-header .page-title {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  text-align: right;
+  color: #fff;
+  font-size: x-large;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.7);
+  z-index: 11;
+}
+
+@media only screen and (max-width: 1040px) {
+  .headpost-text-column {
+    padding-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 980px)
+{
+  .visible-overlay {
+    display: none !important;
+  }
+  #sub-header-banner-container {
+    width: 100%;
+    height: auto;
+  }
+  #sub-header-banner-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  #sub-header-wrapper {
+    margin-top: 1%;
+  }
+}
+
+@media only screen and (max-width : 768px)
+{
+  .visible-overlay {
+    display: none !important;
+  }
+  #sub-header .page-title {
+    right: 0;
+    bottom: 10px;
+    padding: 3px 10px;
+    text-shadow: none;
+    background-color: #000;
+  }
+  .sub-header-container {
+    margin: 0 auto 1%;
+  }
+  .headpost-text-column {
+    width: 98%;
+    margin: 0 auto;
+    padding: 1% 2%;
+    float: none;
+    text-align: center !important;
+  }
+  .headpost-thumb-column {
+    width: 98%;
+    margin: 1% auto;
+    float: none;
+  }
+  h1.homeContent {
+    margin: 0 10px 10px 10px;
+  }
+  .headpost-text-column p {
+    margin: 0 10px 10px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width : 420px) {
+  #sub-header-wrapper {
+    display: none;
+  }
+}

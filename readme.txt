@@ -17,6 +17,7 @@ This plugin works best when you have set static pages for your Front and Posts p
 Easily add a responsive subheader to your pages. There is a separate subheader for your Front page, created when you add a new 'Responsive Subheader' post and a second type for all other pages. Be sure to add a featured image to your pages if you want the subheader to display on them.
 
 Features:
+
  - Custom, editable subheader on the Front page
  - Use a featured image as the subheader for all subpages
  - Attach multiple images to the Front page Responsive Subheader to make a slideshow
@@ -47,6 +48,7 @@ Once you have copied over the 'header.php' file to your child theme, open it up 
 -- How to use the Slider Feature on the Front Page --
 
 Uncheck the setting to use the 'Featured Image' when you create your Responsive Subheader in the admin area.
+
 Attach - do NOT insert - the images that you would like to use to your Responsive Subheader post. To attach without inserting - in the Edit Responsive Subheader screen - click on the 'Add Media' button. When the 'Insert Media' modal window opens select the 'Upload Files' option tab. Upload the files you would like to use for your slider - Do NOT click on 'Insert into post' button - just 'x' out of the modal window to close it.
 
 Your attachment images will be automatically resized down to 800px x 432px for this plugin to use, but if you prefer, you may resize them manually before attaching. If your images are smaller than that size, please enlarge them before uploading. Images smaller than 800px x 432px may not display properly and cause problems. The software lacks the capability to resize smaller images to a larger format. This will need to be done manually before uploading.
@@ -60,6 +62,7 @@ If you have a featured image set to your post, this will not be included as a sl
 There are two easy ways to install this plugin:
 
 Download from the website:
+
 1. Unzip the downloaded file and upload all the contents to your wp-content/plugins directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 
@@ -69,26 +72,32 @@ Install from WordPress:
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 
 Usage:
+
 1. On your admin panel create a new Responsive Sub-header and add a featured image.
 1. Add featured images to the pages you want to which you wish to add a sub-header
 1. Edit your header.php file to add the tiny code snippet supplied with this plugin
 1. Enjoy the magic!
 
 == Frequently Asked Questions ==
+
 Q: Is it easy to use?
+
 A: Responsive Sub-header is extremely easy to use! Just add a small snippit of code
  to your header.php file and set your featured image. Thats all it takes to add new
 depth you to your website.
 
 Q: Do I need to format my pictures to a certain size?
+
 A: You may if you wish, however, you do not need to.
 
 == Changelog ==
 
 = 1.0.0 =
+
  * Initial release.
 
 = 1.0.4 =
+
  * Added un-install file
  * Fixed some minor issues with image sizing and margins
  * Removed white background from front page sub-header
@@ -98,6 +107,7 @@ A: You may if you wish, however, you do not need to.
 == Upgrade Notice ==
 
 = 1.0.0 =
+
  * Initial release
 
 == Screenshots ==
@@ -110,6 +120,7 @@ A: You may if you wish, however, you do not need to.
 == Upcoming Releases ==
 
 In future updates I hope to:
+
  * Add additional features to the front-page sub-header such as background and font color settings.
  * Add a feature to easily attach and detach images from the Responsive Sub-header for the slider
  * Add more overlays
